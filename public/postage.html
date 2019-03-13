@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Postage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>How much postage is required?</h1>   
+    <form action="/getRate" method="GET">
+        Enter the weight:
+        <input type="number" name="weight"><br>
+        Select the mail type:
+        <select name="mailType">
+            <option value="stamped">Letters(Stamped)</option>
+            <option value="metered">Letters(Metered)</option>
+            <option value="flats">Large Envelopes(Flats)</option>
+            <option value="retail">First-Class Package Service-Retail</option>
+        </select><br>
+
+        <input type="submit" value="Get Postage">
+    </form>
+</body>
+</html>
